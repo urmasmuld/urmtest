@@ -7,15 +7,21 @@
   "author": "Team2",
   "license": "ISC",
   "scripts": {
-    "commit": "npx git-cz",
     "semantic-release": "semantic-release",
-    "postversion": "git add package.json"
+    "version": "npm version"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm version --no-git-tag-version <type> && git add package.json"
+    }
+  },  
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "commitizen": "^4.3.0",
     "cz-customizable": "^7.0.0",
+    "husky": "^8.0.3",
     "semantic-release": "^22.0.5"
   }
 }
