@@ -5,5 +5,16 @@
   "main": "index.js",
   "keywords": [],
   "author": "Team2",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "release-patch": "npm version patch && git add package.json && git commit -m 'chore(release): version bump [skip ci]'",
+    "release-minor": "npm version minor && git add package.json && git commit -m 'chore(release): version bump [skip ci]'",
+    "release-major": "npm version major && git add package.json && git commit -m 'chore(release): version bump [skip ci]'"
+  },  
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^11.0.0",
+    "semantic-release": "^22.0.5"
+  }
 }
