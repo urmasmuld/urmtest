@@ -9,7 +9,7 @@
   "scripts": {
     "commit": "npx git-cz",
     "semantic-release": "semantic-release",
-    "postversion": "git add package.json",
+    "postversion": "git add package.json"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
