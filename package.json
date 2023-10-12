@@ -1,6 +1,6 @@
 {
   "name": "PlantTracker_Team2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "keywords": [],
@@ -10,7 +10,7 @@
     "release-patch": "npm version patch && git add package.json && git commit -m 'chore(release): version bump [skip ci]'",
     "release-minor": "npm version minor && git add package.json && git commit -m 'chore(release): version bump [skip ci]'",
     "release-major": "npm version major && git add package.json && git commit -m 'chore(release): version bump [skip ci]'"
-  },  
+  },
   "dependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
