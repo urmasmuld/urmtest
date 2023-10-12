@@ -1,6 +1,6 @@
 {
   "name": "PlantTracker_Team2",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "keywords": [],
@@ -14,8 +14,7 @@
     "hooks": {
       "pre-commit": "echo 'Running pre-commit hook' && npm version --no-git-tag-version <type> && git add package.json"
     }
-  }
-  ,
+  },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/exec": "^6.0.3",
